@@ -1,0 +1,314 @@
+:root {
+    --bg-primary: #f7fafc;
+    --bg-secondary: #edf2f7;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --brand-dark: #2c3e50;
+    --brand-light: #4a5568;
+    --brand-accent: #3182ce;
+    --brand-accent-hover: #2b6cb0;
+    --border-color: #e2e8f0;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4 { color: var(--brand-dark); margin-bottom: 1rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; text-align: center; margin-bottom: 3rem; }
+p { color: var(--text-muted); margin-bottom: 1rem; }
+
+/* Navigation */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.logo { display: flex; align-items: center; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+/* Buttons */
+.cta-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--brand-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.cta-btn:hover { background-color: var(--brand-accent-hover); }
+
+.cta-btn.outline {
+    background-color: transparent;
+    border: 2px solid var(--brand-accent);
+    color: var(--brand-accent);
+}
+.cta-btn.outline:hover {
+    background-color: var(--brand-accent);
+    color: white;
+}
+
+.secondary-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid var(--border-color);
+}
+
+/* Layout */
+section {
+    padding: 5rem 5%;
+}
+.bg-alt {
+    background-color: var(--bg-secondary);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Hero */
+#hero {
+    padding: 8rem 5%;
+    text-align: center;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--border-color) 100%);
+}
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.card svg { margin-bottom: 1rem; }
+
+/* Pricing */
+.price-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+.price-card.popular {
+    border: 2px solid var(--brand-accent);
+    transform: scale(1.05);
+}
+.price {
+    font-size: 2.5rem;
+    color: var(--brand-dark);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.price span { font-size: 1rem; color: var(--text-muted); }
+.price-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.price-card li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+.price-card li::before {
+    content: "•";
+    color: var(--brand-accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* FAQ */
+.faq-list { max-width: 800px; margin: 0 auto; }
+.faq-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+/* Footer */
+footer {
+    background: var(--brand-dark);
+    color: white;
+    text-align: center;
+    padding: 3rem 5%;
+}
+.footer-nav {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.footer-nav a {
+    color: #cbd5e0;
+    text-decoration: none;
+}
+.footer-nav a:hover { color: white; }
+
+/* SEO Article styles */
+.seo-article a, .seo-article a:visited {
+    color: #4a6fa5;
+}
+
+/* Blog Index */
+.blog-container {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.blog-container h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.blog-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+.blog-card h3 {
+    font-size: 1.25rem;
+    color: var(--brand-dark);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+.blog-card p {
+    color: var(--text-muted);
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+.blog-card .cta-btn {
+    align-self: flex-start;
+}
+
+/* SEO Article Layout */
+.seo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 5%;
+    background-color: var(--bg-primary);
+}
+.seo-article {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.seo-article h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--brand-dark);
+}
+.seo-article h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: var(--brand-dark);
+}
+.seo-article h3 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--brand-light);
+}
+.seo-article p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+}
+
+/* Global Link Override to prevent default browser blue/purple */
+a { color: #4a6fa5; text-decoration: none; }
+a:visited { color: inherit; }
+a:hover { filter: brightness(1.2); }
+
+
+/* Universal Mobile Nav Fix */
+@media (max-width: 991px) {
+    header, .top-header, .sticky-nav {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 15px 10px !important;
+    }
+    .main-nav, nav, .nav-links, .nav-links ul, nav ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 0 !important;
+    }
+    .main-nav a, nav a, .nav-links a {
+        font-size: 0.95rem !important;
+        padding: 5px !important;
+        margin: 0 !important;
+    }
+    .cta-btn, .nav-cta, .btn, .primary-btn, .primary-cta {
+        margin-top: 5px !important;
+        width: auto !important;
+    }
+}
