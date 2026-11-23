@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://shanhucloud.homes/index.html</loc>
@@ -7,49 +7,49 @@
   </url>
   <url>
     <loc>https://shanhucloud.homes/blog.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shanhucloud.homes/about.html</loc>
+    <loc>https://shanhucloud.homes/about.html</loc><lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shanhucloud.homes/terms.html</loc>
+    <loc>https://shanhucloud.homes/terms.html</loc><lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shanhucloud.homes/privacy.html</loc>
+    <loc>https://shanhucloud.homes/privacy.html</loc><lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shanhucloud.homes/remote-work-guide.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shanhucloud.homes/shanhucloud-enterprise.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shanhucloud.homes/proxy-protocols.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shanhucloud.homes/data-encryption.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shanhucloud.homes/global-routing.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shanhucloud.homes/enterprise-networking.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
